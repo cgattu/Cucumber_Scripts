@@ -8,7 +8,7 @@ end
 
 Cucumber::Rake::Task.new(:Facility_view_ohio) do |t|
 t.profile='Facility'
-#t.cucumber_opts = "--tags @Widget"
+t.cucumber_opts = "--tags @Widget"
 end
 task :Facility=> :Facility_view_ohio
 task :default => :features
